@@ -1,0 +1,36 @@
+<!--pages/shop/shop.wxml-->
+
+<scroll-view class='scroll' scroll-x='true' style='width: auto; overflow: hidden;'>
+    <block wx:for='{{parentData}}' wx:key='this'>   
+      <label class='item_one' bindtap='parentClick' data-children='{{item.children}}' style="background-color:{{itemOneBg}}">{{item.name}}</label>       <!-- 一级标题 -->
+    </block>
+</scroll-view>
+
+
+<scroll-view class='scroll' scroll-x='true' style='width: auto; overflow: hidden;'>
+  <block wx:for='{{childrenData}}' wx:key='this'>   
+    <label class='item_two' bindtap='childrenClick' data-id='{{item.id}}'>{{item.name}}</label>  <!-- 二级标题 -->
+  </block>
+</scroll-view>
+
+
+<scroll-view class='scroll' scroll-top="{{scrollTop}}" scroll-y='true' style='height:{{scrollHeight}}px;'  bindscrolltolower='bindDownload'>   <!-- 监听下下拉上滑事件 -->
+
+  <block wx:for='{{articalData}}' wx:key='this'>   <!-- 文章列表 -->
+
+    <view class='divider'/>     <!-- 分割线 -->
+    <view class='artical' bindtap='detailClick' data-url='{{item.link}}'>   <!-- 点击事件 -->
+        <view class='artical-title'>   <!-- 标题 -->
+          <block wx:if="{{item.fresh}}">
+            <image class='artical_new' src='../../picture/new.png'/>\t
+          </block>
+          <text space='ensp'>{{item.title}}</text>
+        </view>
+        <view class='artical-bottom'>    <!-- 其他 -->
+          <text class='artical-message' space='emsp'>作者:\t{{item.author}}</text>
+          <text class='artical-message' space='emsp'> 时间:\t{{item.niceDate}}</text>
+        </view>
+    </view>
+  </block>
+  <view class='load-more'><text >{{tip}}</text> <!-- 加载更多提示 --></view>
+</scroll-view>

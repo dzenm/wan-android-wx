@@ -1,0 +1,29 @@
+<!--pages/project/project.wxml-->
+
+<view class='container'>
+  <scroll-view class='type' scroll-x='true' style='width: auto; overflow: hidden;' scrollTop='{{scrollTop}}'>
+   <block wx:for='{{projectTypeData}}' wx:key='this'> 
+        <view class='type-item' bindtap='projectType' data-id='{{item.id}}'>{{item.name}}</view>    <!-- 一级标题 -->
+    </block>
+  </scroll-view>
+
+  <scroll-view class='project‘ scroll-y='true' scrollTop='{{scrollTop}}' bindscrolltolower='bindDownload'>
+      <block wx:for='{{projectData}}' wx:key='this'>
+        <view class='project-item' bindtap='detailClick' data-url='{{item.link}}'>
+          <view>
+            <image class='image' src='{{item.envelopePic}}'/>
+          </view>
+          <view class='content'>
+            <view class='title'>{{item.title}}</view>
+            <view class='desc'>{{item.desc}}</view>
+            <view class='detail'>
+              <text>时间：{{item.niceDate}}</text>
+              <text space='ensp'>   作者：{{item.author}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class='load-more'><text >{{tip}}</text> <!-- 加载更多提示 --></view>
+  </scroll-view>
+
+</view>

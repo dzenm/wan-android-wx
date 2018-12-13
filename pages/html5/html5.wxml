@@ -1,0 +1,4 @@
+<!--pages/html5/html5.wxml-->
+
+<progress percent='100' active='true'/>   <!-- 加载进度条 -->
+<web-view src="{{link}}"></web-view>    <!-- web-view 加载URL -->

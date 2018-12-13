@@ -1,0 +1,99 @@
+/* pages/project/project.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+}
+
+.type {
+  margin: 20rpx;
+}
+
+.type-item { 
+  height: auto;
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  border: 1px solid #efefef;
+  padding: 10rpx;
+  display: inline-block;
+}
+
+.project {
+  width: 92%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.project-item {
+  width: auto;
+  height: auto;
+  margin-top: 20rpx;
+  padding: 25rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 10rpx;
+  border: 1px solid #efefef;
+}
+
+.image {
+  width: 100rpx;
+  height: 160rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+}
+
+.content {
+  width: auto;
+  height: 300rpx;
+}
+
+.title {
+  width: auto;
+  height: auto;
+  font-size: large;
+  padding: 10rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;
+}
+
+.desc {
+  width: auto;
+  height: auto;
+  font-size: initial;
+  padding: 5rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  color: #707070;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:4;
+}
+
+.detail {
+  width: auto;
+  height: auto;
+  font-size: small;
+  color: #bfbfbf;
+  display: flex;
+  padding: 5rpx;
+  justify-content: space-between;
+} 
+
+.load-more{
+  font-size: small;
+  padding: 20rpx;
+  display: flex;
+  justify-content: center;
+}

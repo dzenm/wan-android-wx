@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/type/type",
+    "pages/me/me",
+    "pages/me/myinform/myinform",
+    "pages/me/trolley/trolley",
+    "pages/me/order/order",
+    "pages/me/favorite/favorite",
+    "pages/me/type/type",
+    "pages/me/setting/setting",
+    "pages/html5/html5",
+    "pages/project/project"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "玩android",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "color": "#515151",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "picture/index.png",
+        "selectedIconPath": "picture/indexSelected.png"
+      },
+      {
+        "pagePath": "pages/type/type",
+        "text": "体系",
+        "iconPath": "picture/type.png",
+        "selectedIconPath": "picture/typeSelected.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目",
+        "iconPath": "picture/project.png",
+        "selectedIconPath": "picture/projectSelected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "picture/me.png",
+        "selectedIconPath": "picture/meSelected.png"
+      }
+    ]
+  }
+}
